@@ -1,9 +1,11 @@
+# Two Number Sum
+
 def twoNumberSum(array, targetSum):
-	obj = {}
+    obj = {}
     for i in array:
-		targetNumber = targetSum - i
-		if targetNumber in obj:
-			return [i, targetNumber]
-		else:
-			obj[i] = True
-	return []
+        targetNumber = targetSum - i
+        if targetNumber in obj:
+            return [i, targetNumber]
+        else:
+            obj[i] = True
+    return []
